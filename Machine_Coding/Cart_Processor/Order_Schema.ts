@@ -34,3 +34,5 @@ export const CheckoutPayload = z.object({
     metadata : MetadataSchema
 
 });
+export type Cart_Item = z.infer<typeof CartItemsSchema>;
+export type Checkout_Payload = z.infer<typeof CheckoutPayload>;
